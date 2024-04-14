@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortner</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+
+
+<header>
+  <h1>URL Shortner</h1>
+  <form id="form"  class="forminput">
+    <i  id="link" class="material-icons">link</i>
+    <input id="urlinput" type="url" placeholder="Enter Long url" required>
+    <i onclick="openModel()" id="link" class="material-icons">tune</i>
+    <button type="submit" id="shortbtn">Shorten
+    </button>
+</header>
+
+<div class="links"></div>
+<dialog>
+<p>Add Custome Endpoint</p>
+<div class="custome-link">
+  <i id="link" class="material-icons">link</i>
+  <input id="title" type="text">
+</div>
+<div class="buttons">
+  <button onclick="closeModel()">OK</button>
+</div>
+</dialog>
+<script src="https://cdn.jsdelivr.net/npm/cleave.js@1.5.3/dist/cleave.min.js"></script>
+
+  <script src="script.js"></script>
+  </body>
+</html>
